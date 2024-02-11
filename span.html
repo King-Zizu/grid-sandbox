@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=se, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body{
+            background-color: #111;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        div{
+            background-color: darkgoldenrod;
+            text-align: center;
+            border: 2px solid khaki;
+            padding: 15px;
+            font-size: 1.4em;
+        }
+        .gridcontainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin: 3rem;
+            justify-content: center;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        .divA{
+           /* grid-column-start: 1;
+           grid-column-end: 5; */
+           grid-column: 1/span 5;
+        }
+        .divb{
+            grid-row: 2/span 2;
+            height: 150px;
+        }
+        .divc{
+            grid-column:span 3;
+           
+        }
+        .divd{
+            grid-row:span 2;
+           
+        }
+        .divh{
+            grid-column:span 5;
+           
+        }
+
+    </style>
+</head>
+<body>
+   <section class="gridcontainer">
+    <div class="divA">Header</div>
+    <div class="divb">Menu</div>
+    <div class="divc">Main content</div>
+    <div class="divd">Sidebar</div>
+    <div class="dive">Sub</div>
+    <div class="divf">Sub</div>
+    <div class="divg">Sub</div>
+    <div class="divh">Footer</div>
+   </section> 
+</body>
+</html>
